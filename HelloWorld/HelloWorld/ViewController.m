@@ -13,6 +13,8 @@
 @end
 
 @implementation ViewController
+@synthesize textField;
+@synthesize label;
 
 - (void)viewDidLoad
 {
@@ -22,6 +24,9 @@
 
 - (void)viewDidUnload
 {
+    [self setTextField:nil];
+    [self setTextField:nil];
+    [self setLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -31,4 +36,6 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)changeGreeting:(id)sender {
+}
 @end
